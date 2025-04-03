@@ -22,7 +22,8 @@ You can follow same procedure in the official  AWS document [Getting started wit
    b. Move the extracted binary to /usr/local/bin   
    c. Test that your eksclt installation was successful   
    ```sh
-   curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
+   curl --silent --location "https://github.com/weaveworks/eksctl/releases/download/0.139.0/eksctl_Linux_amd64.tar.gz" -o /tmp/eksctl.tar.gz
+  curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
    sudo mv /tmp/eksctl /usr/local/bin
    eksctl version
    ```
